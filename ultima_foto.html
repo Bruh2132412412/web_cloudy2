@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudy</title>
+    <link rel="icon" type="image/x-icon" href="Recursos/foto.ico.png">
+
+    <style>
+      
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        margin: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        text-align: center;
+      }
+
+      header,
+      footer {
+        background-color: #0099ffda;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        /*AÑADIMOS DISPLAY: FLEX para elemntos uno al lado de otro */
+        display: flex;
+        gap: 10px;
+      }
+
+      main {
+        max-width: 900px;
+        margin: 20px auto;
+        background: rgb(209, 234, 255);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      section {
+        margin-bottom: 30px;
+      }
+
+      section h2 {
+        border-bottom: 3px solid #000000;
+        padding-bottom: 5px;
+        color: #000000;
+      }
+
+      article {
+        background-color: #fafafa;
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 6px;
+        margin-top: 15px;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      article:hover {
+        transform: scale(1.01);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      article h3 {
+        margin-top: 0;
+        color: #222;
+      }
+
+      article p {
+        margin: 8px 0;
+      }
+
+      footer p {
+        margin: 0;
+        font-size: 0.9em;
+      }
+
+      a{
+
+        text-decoration: none;
+        /*Con esto evitamos que nos ponga texto como si hemos hecho una busqueda*/
+        color: black;
+        /*Cambios a negro ese color de resalto que hace en las busquedas, despues de visitar esa web varias veces*/
+      }
+
+      </style>
+
+    
+
+</head>
+<body>
+    
+<header>
+<a href="index.html"><img src="Recursos/foto.ico.png" width="100px"></a>
+<h1>Última foto tomada por nuestra estación</h1>
+
+</header>
+
+
+
+<main>
+
+<section>
+
+<article>
+<h2>¿Como lo hemos hecho?</h2>
+<p>Para poder realizar imagenes cada minuto utilizamos Uvccapture en
+RaspberryPi OS para realizar imagenes cada minuto y mandarlas posteriormente
+a nuestor servidor Web.
+</p>
+</article>
+<img src="" width="500px" height="500px" alt="foto">
+</section>
+
+</main>
+
+
+
+</footer>
+
+
+
+</body>
+</html>
